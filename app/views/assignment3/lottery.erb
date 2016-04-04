@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+    </head>
+    <body>
+        
+       
+        <div style="text-align: center; margin-top: 200px; position: relative;">
+            <h1>축하합니다</h1>
+        </div>
+        
+        <div style="text-align: center; margin-top: 100px; margin-left: 300px;"> <button onclick="myFunction()">Reload page</button></div>
+
+<script>
+function myFunction() {
+    location.reload();
+}
+ </script>
+        
+        <div style="position:absolute; top:0; bottom:0; left:0; right:0;
+      margin:auto; height:100px; width:20%;">
+
+<%=image_tag @lotto1 %>
+<%=image_tag @lotto2 %>
+<%=image_tag @lotto3 %>
+<%=image_tag @lotto4 %>
+<%=image_tag @lotto5 %>
+<%=image_tag @lotto6 %>
+<p>추가번호<%=image_tag @lotto7 %></p>
+
+</div>
+
+
+<embed src="bgm.mp3" autostart:"true" loop="true" hidden="true" />
+
+</body>
+
+</html>
